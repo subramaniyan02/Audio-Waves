@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+
+@keyframes audio-wave {
+
+   0%{
+       height: 12px;
+       transform: translate(0px);
+       background: #ffb378;
+   }
+   
+   25%{
+       height: 78px;
+       transform: translate(-5px) scale(1.7);
+       background: #e2599d;
+
+   }
+   
+   50%{
+       height: 6px;
+       transform: translate(0px);
+       background: #a47ff9;
+   }
+
+   100%{
+       height: 6px;
+       transform: translate(0px);
+       background: #347b8b;
+   }
+   
+   
+}
+
+.sound-wave {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 16px;
+ width: 120px;
+ height: 80px;
+}
+
+.sound-wave div {
+   height: 60px;
+   display: block;
+   width: 20px;
+   height: 22px;
+   border-radius: 8px;
+   background: rgb(162, 255, 0);
+   animation: audio-wave 2.2s
+     infinite ease-in-out;
+
+
+}
+
+.sound-wave div:nth-child(2) {
+   left: 22px;
+   animation-delay: 0.2s;
+}
+.sound-wave div:nth-child(3) {
+   left: 44px;
+   animation-delay: 0.5s;
+}
+.sound-wave div:nth-child(4) {
+   left: 66px;
+   animation-delay: 0.6s;
+}
+.sound-wave div:nth-child(5) {
+   left: 88px;
+   animation-delay: 0.8s;
+}
+.sound-wave div:nth-child(6) {
+   left: 110px;
+   animation-delay: 1s;
+}
